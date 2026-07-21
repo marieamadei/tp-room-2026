@@ -32,19 +32,19 @@ document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
 const scenarios = {
   core: {
-    revenues: ['€177k', '€418k', '€501k'], heights: ['35%', '83%', '100%'],
-    ebitda: ['−€32k', '−€68k', '−€41k'], need: '€346k', label: 'Core Test',
-    note: 'Solo core fisico + AI. Nessun nuovo workbook né B2B: mostra il costo di non attivare le estensioni.'
+    revenues: ['€259k', '€479k', '€595k'], heights: ['44%', '81%', '100%'],
+    ebitda: ['−€97k', '−€48k', '+€3k'], need: '€317k', label: 'Downside',
+    note: 'CAC fisico a €16 e churn AI al 10% limitano il risultato nonostante il lancio: il round non copre integralmente il proof plan e i gate impongono correzione o stop.'
   },
   test: {
-    revenues: ['€187k', '€477k', '€579k'], heights: ['32%', '82%', '100%'],
-    ebitda: ['−€28k', '−€36k', '+€1k'], need: '€287k', label: 'Operating Test',
-    note: 'Caso base: un nuovo workbook, primi ricavi B2B e acquisizione AI controllata. È la previsione operativa, non una promessa.'
+    revenues: ['€456k', '€817k', '€1,00 mln'], heights: ['46%', '82%', '100%'],
+    ebitda: ['−€10k', '+€110k', '+€197k'], need: '€232k', label: 'Base',
+    note: '≈2.079 utenti AI attivi a M12 e ≈4.000 a M24, mantenendo churn 8% e LTV/CAC 2,02x. Le tranche successive dipendono dai gate.'
   },
   scale: {
-    revenues: ['€200k', '€591k', '€791k'], heights: ['25%', '75%', '100%'],
-    ebitda: ['−€29k', '−€15k', '+€64k'], need: '€267k', label: 'Operating Scale',
-    note: 'Si attiva solo dopo evidenza di CAC ≤€20, churn ≤6% e LTV/CAC ≥3x. La scala è un diritto da conquistare.'
+    revenues: ['€689k', '€1,34 mln', '€1,72 mln'], heights: ['40%', '78%', '100%'],
+    ebitda: ['+€96k', '+€361k', '+€548k'], need: '€183k', label: 'Upside',
+    note: 'CAC fisico vicino al 2023 e retention AI più forte portano oltre 8.000 utenti AI attivi a M24. È un esito possibile, non la base usata per chiedere capitale.'
   }
 };
 

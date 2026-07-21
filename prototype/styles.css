@@ -709,10 +709,24 @@ h2:focus {
 }
 
 .workbook-card > span {
-  grid-row: 1 / 3;
+  grid-row: 1 / 4;
   color: var(--gold);
   font-family: var(--serif);
   font-size: 20px;
+}
+
+.workbook-badge {
+  justify-self: start;
+  padding: 3px 7px;
+  border-radius: 999px;
+  color: var(--green);
+  background: var(--green-soft);
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .workbook-card strong {

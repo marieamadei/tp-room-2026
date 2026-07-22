@@ -102,6 +102,9 @@ p, h1, h2, h3 { text-wrap: pretty; }
 .fact p { margin: 0; color: var(--muted); font-size: 13px; }
 .deep .fact { border-color: var(--white-line); }
 .deep .fact p { color: rgba(255,255,255,.62); }
+.source-note { max-width: 1020px; margin: 22px 0 0; color: var(--muted); font-size: 10px; line-height: 1.6; }
+.deep .source-note { color: rgba(255,255,255,.48); }
+.source-note a { color: inherit; text-decoration-color: rgba(185,149,88,.65); text-underline-offset: 2px; }
 
 .quote { max-width: 1030px; margin: 0; font-family: var(--serif); font-size: clamp(36px, 5.4vw, 74px); letter-spacing: -.04em; line-height: 1.05; }
 .quote em { color: var(--gold-soft); font-weight: 400; }

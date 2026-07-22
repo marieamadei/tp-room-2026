@@ -48,6 +48,7 @@ p, h1, h2, h3 { text-wrap: pretty; }
 .deep .eyebrow, .green .eyebrow { color: var(--gold-soft); }
 .display, .title, .section-title { margin: 0; font-family: var(--serif); font-weight: 400; letter-spacing: -.045em; line-height: .96; }
 .display { max-width: 1040px; font-size: clamp(58px, 9vw, 126px); }
+.hero .display { max-width: 1000px; font-size: clamp(46px, 5.8vw, 82px); line-height: 1; }
 .title { max-width: 1050px; font-size: clamp(48px, 7vw, 94px); }
 .section-title { max-width: 890px; font-size: clamp(42px, 5.7vw, 76px); }
 .display em, .title em, .section-title em { color: var(--green); font-weight: 400; }
@@ -242,6 +243,7 @@ p, h1, h2, h3 { text-wrap: pretty; }
   .brand img { width: 150px; }
   .hero { padding: 68px 0; }
   .display { font-size: 56px; }
+  .hero .display { font-size: 44px; }
   .title { font-size: 50px; }
   .lead { font-size: 20px; }
   .metric-strip, .card-grid, .fact-grid, .scenario-panel, .criteria, .scope-columns { grid-template-columns: 1fr; }

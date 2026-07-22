@@ -39,7 +39,7 @@ const scenarios = {
   test: {
     revenues: ['€456k', '€817k', '€1,00 mln'], heights: ['46%', '82%', '100%'],
     ebitda: ['−€10k', '+€110k', '+€197k'], need: '€232k', label: 'Base',
-    note: '≈2.079 utenti AI attivi a M12 e ≈4.000 a M24, mantenendo churn 8% e LTV/CAC 2,02x. Le tranche successive dipendono dai gate.'
+    note: '≈2.079 utenti AI attivi a M12 e ≈4.000 a M24, mantenendo churn 8% e LTV/CAC 2,02x. Il round è unico; l’accelerazione del budget dipende dai gate.'
   },
   scale: {
     revenues: ['€689k', '€1,34 mln', '€1,72 mln'], heights: ['40%', '78%', '100%'],

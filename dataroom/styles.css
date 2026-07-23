@@ -119,9 +119,9 @@ p, h1, h2, h3 { text-wrap: pretty; }
 .path h3 { margin: 62px 0 10px; font-family: var(--serif); font-size: 24px; font-weight: 400; }
 .path p { margin: 0; color: var(--muted); font-size: 12px; }
 
-.bridge { display: grid; grid-template-columns: .8fr 1.2fr; gap: 80px; align-items: center; }
-.product-visual { min-height: 500px; display: flex; align-items: center; justify-content: center; margin: 0; }
-.product-photo { width: min(100%, 540px); height: auto; filter: drop-shadow(0 34px 52px rgba(0,0,0,.28)); }
+.bridge { display: grid; grid-template-columns: 1fr 1.05fr; gap: 56px; align-items: center; }
+.product-visual { min-height: 560px; display: flex; align-items: center; justify-content: center; margin: 0; }
+.product-photo { display: block; width: min(100%, 610px); height: auto; filter: drop-shadow(0 34px 52px rgba(0,0,0,.28)); }
 .bridge-list { margin: 45px 0 0; padding: 0; list-style: none; border-top: 1px solid var(--white-line); }
 .bridge-list li { display: grid; grid-template-columns: 46px 1fr; gap: 18px; padding: 19px 0; border-bottom: 1px solid var(--white-line); }
 .bridge-list b { color: var(--gold-soft); font-family: var(--serif); font-size: 18px; font-weight: 400; }

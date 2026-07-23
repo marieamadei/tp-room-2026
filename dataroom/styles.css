@@ -120,13 +120,8 @@ p, h1, h2, h3 { text-wrap: pretty; }
 .path p { margin: 0; color: var(--muted); font-size: 12px; }
 
 .bridge { display: grid; grid-template-columns: .8fr 1.2fr; gap: 80px; align-items: center; }
-.product-stack { position: relative; min-height: 500px; }
-.product-sheet { position: absolute; width: 70%; aspect-ratio: .78; padding: 28px; border: 1px solid rgba(255,255,255,.15); border-radius: 4px; background: #efe8db; box-shadow: 0 35px 90px rgba(0,0,0,.25); transform-origin: bottom left; }
-.product-sheet:nth-child(1) { left: 0; bottom: 0; transform: rotate(-7deg); background: #d9cfbd; }
-.product-sheet:nth-child(2) { left: 14%; bottom: 4%; transform: rotate(2deg); background: #e7d2c2; }
-.product-sheet:nth-child(3) { left: 27%; bottom: 1%; transform: rotate(9deg); background: #ece9e0; }
-.product-sheet b { color: var(--deep); font-family: var(--serif); font-size: 31px; font-weight: 400; }
-.product-sheet span { display: block; margin-top: 10px; color: var(--green-2); font-size: 9px; font-weight: 850; letter-spacing: .15em; text-transform: uppercase; }
+.product-visual { min-height: 500px; display: flex; align-items: center; justify-content: center; margin: 0; }
+.product-photo { width: min(100%, 540px); height: auto; filter: drop-shadow(0 34px 52px rgba(0,0,0,.28)); }
 .bridge-list { margin: 45px 0 0; padding: 0; list-style: none; border-top: 1px solid var(--white-line); }
 .bridge-list li { display: grid; grid-template-columns: 46px 1fr; gap: 18px; padding: 19px 0; border-bottom: 1px solid var(--white-line); }
 .bridge-list b { color: var(--gold-soft); font-family: var(--serif); font-size: 18px; font-weight: 400; }
@@ -255,7 +250,7 @@ p, h1, h2, h3 { text-wrap: pretty; }
   .path, .gate-grid { grid-template-columns: 1fr; }
   .path article, .gate-grid article { min-height: auto; padding: 28px 0; border-right: 0; }
   .path h3, .gate-grid h3 { margin-top: 36px; }
-  .product-stack { min-height: 380px; }
+  .product-visual { min-height: 380px; }
   .scenario-controls { overflow-x: auto; }
   .decision-row { grid-template-columns: 1fr; gap: 8px; }
   .cycle { grid-template-columns: 1fr; }

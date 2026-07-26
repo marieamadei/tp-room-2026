@@ -6,7 +6,7 @@
   const FLOW_ORDER = ["01", "02", "14", "03", "04", "20", "21", "15", "05", "06", "07", "08", "09", "10", "16", "11", "17", "12", "18", "19", "13"];
 
   /* Decisioni approvate per il primo MVP:
-     - la frase è la porta quotidiana stabile;
+     - lo spunto di oggi è la porta quotidiana stabile e può essere una frase, una domanda o un check-in;
      - il tono predefinito è gentile e resta una preferenza esplicita;
      - la memoria è separata dal consenso al servizio e richiede conferma puntuale;
      - i pattern sono sempre formulati come ipotesi correggibili. */
@@ -286,10 +286,10 @@
       if (phrase) phrase.textContent = "“Non devi avere tutto chiaro per fare il prossimo passo.”";
       if (theme) theme.textContent = state.intention === "altro" ? "Il tuo momento" : capitalize(state.intention || "Cambiamento");
       if (bridge && linked) {
-        bridge.textContent = `Sei in ${stageLabel(state.workbookStage).toLowerCase()} del tuo percorso. Questa frase incontra la promessa che hai scelto: “${state.workbookPromise}”`;
+        bridge.textContent = `Sei in ${stageLabel(state.workbookStage).toLowerCase()} del tuo percorso. Questo spunto incontra la promessa che hai scelto: “${state.workbookPromise}”`;
       } else if (bridge) {
         const intention = state.intention && state.intention !== "altro" ? `dal ${state.intention}` : "da ciò che conta oggi";
-        bridge.textContent = `Hai scelto di partire ${intention}. Vuoi vedere dove questa frase incontra il tuo momento?`;
+        bridge.textContent = `Hai scelto di partire ${intention}. Vuoi vedere dove questo spunto incontra il tuo momento?`;
       }
     }
   }
@@ -534,7 +534,7 @@
   }
 
   function workbookLabel(value) {
-    return { diario: "Diario del Nuovo Inizio", crea: "Crea", arte: "L’Arte" }[value] || "Percorso TUPENSACI";
+    return { diario: "Diario del Nuovo Inizio", crea: "Crea", arte: "L’Arte" }[value] || "Con te, ogni giorno";
   }
 
   function stageLabel(value) {
@@ -633,7 +633,7 @@
       state.savedPhrase = !state.savedPhrase;
       persist();
       renderGlobalState();
-      showToast(state.savedPhrase ? "Frase salvata nel tuo percorso." : "Frase rimossa dal tuo percorso.");
+      showToast(state.savedPhrase ? "Frase salvata in Con te, ogni giorno." : "Frase rimossa da Con te, ogni giorno.");
       return;
     }
 

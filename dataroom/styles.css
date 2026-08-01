@@ -263,6 +263,14 @@ p, h1, h2, h3 { text-wrap: pretty; }
 .phase-list summary i { color: var(--green); font-size: 11px; font-style: normal; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
 .phase-list details p { max-width: 760px; margin: 0 0 25px 78px; color: var(--muted); }
 
+.founder-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.founder-card { display: grid; grid-template-columns: 180px 1fr; align-items: center; gap: 30px; min-height: 330px; padding: 34px; background: rgba(255,255,255,.38); border: 1px solid var(--line); }
+.founder-photo { position: relative; width: 180px; height: 180px; overflow: hidden; background: var(--paper); border: 2px solid var(--gold); border-radius: 50%; }
+.founder-photo img { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; object-fit: cover; }
+.founder-card span { display: inline-flex; padding: 7px 12px; color: var(--green); background: rgba(185,149,88,.13); border-radius: 999px; font-size: 10px; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
+.founder-card h3 { margin: 18px 0 14px; font-family: var(--serif); font-size: 35px; font-weight: 400; letter-spacing: -.03em; line-height: 1; }
+.founder-card p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
+
 .download-band { padding: 48px 0; color: white; background: var(--green-2); }
 .download-inner { display: flex; align-items: center; justify-content: space-between; gap: 30px; }
 .download-inner h2 { margin: 0; font-family: var(--serif); font-size: clamp(30px, 4vw, 48px); font-weight: 400; }
@@ -299,6 +307,7 @@ p, h1, h2, h3 { text-wrap: pretty; }
   .gate-grid article:nth-child(2) { border-right: 0; }
   .gate-grid article:nth-child(-n+2) { border-bottom: 1px solid var(--white-line); }
   .doc-shell { grid-template-columns: 1fr; gap: 45px; }
+  .founder-grid { grid-template-columns: 1fr; }
   .toc { position: static; display: flex; flex-wrap: wrap; gap: 5px 16px; }
   .toc p { flex-basis: 100%; }
   .toc a { border: 0; }
@@ -341,9 +350,17 @@ p, h1, h2, h3 { text-wrap: pretty; }
   .phase-list summary { grid-template-columns: 44px 1fr; }
   .phase-list summary i { grid-column: 2; }
   .phase-list details p { margin-left: 62px; }
+  .founder-card { grid-template-columns: 108px 1fr; gap: 20px; min-height: 0; padding: 24px 20px; }
+  .founder-photo { width: 108px; height: 108px; }
+  .founder-card h3 { font-size: 28px; }
   .download-inner { align-items: flex-start; flex-direction: column; }
   .footer-inner { grid-template-columns: 1fr; }
   .footer-inner p { text-align: left; }
+}
+
+@media (max-width: 430px) {
+  .founder-card { grid-template-columns: 1fr; }
+  .founder-photo { width: 132px; height: 132px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

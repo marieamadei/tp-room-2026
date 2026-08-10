@@ -3,13 +3,14 @@ AGGIORNAMENTO DEL SITO GIÀ PUBBLICATO
 1. Aprire il repository GitHub “tp-room-2026” e restare nella sezione Code, branch main.
 2. Cliccare Add file > Upload files.
 3. Trascinare dentro la pagina TUTTO il contenuto di questa cartella, non la cartella esterna stessa.
-4. GitHub mostrerà i file esistenti come sostituiti e il nuovo PDF nella cartella downloads.
-5. Scrivere come messaggio: “Allinea Business Plan e investor room v2.1 — lancio AI rafforzato”.
+4. GitHub mostrerà i file esistenti come sostituiti e il Business Plan v3.0 nella cartella downloads.
+5. Scrivere come messaggio: “Allinea investor room al Business Plan v3.0”.
 6. Lasciare selezionato “Commit directly to the main branch” e cliccare Commit changes.
 7. Attendere alcuni minuti e ricaricare il link già condiviso. Il link non cambia.
 
 Controllo rapido dopo la pubblicazione:
-- nella home devono apparire “€284k benchmark 2023” e “proof plan di 12 mesi”;
-- nel pitch il caso Base deve mostrare €456k / €817k / €1.002m;
-- devono apparire circa 2.000 utenti AI attivi a M12 e 4.000 a M24;
-- il pulsante “Scarica la sintesi BP” deve aprire il nuovo PDF.
+- nel pitch devono apparire €9/mese, €89/anno e €69 founding;
+- il caso Base deve mostrare €485k / €894k / €1,11m di ricavi;
+- devono apparire 2.079 utenti AI attivi a M12 e 4.000 a M24;
+- il caso Accelerato deve restare subordinato ai gate;
+- il pulsante “Business Plan v3.0” deve aprire il nuovo file Excel.
